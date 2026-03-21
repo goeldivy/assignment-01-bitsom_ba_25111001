@@ -8,3 +8,5 @@ All files are stored inside the datasets folder:
 - orders_flat.csv
 - products.parquet
 - retail_transactions.csv
+This repository contains datasets for the assignment.
+All files are stored inside the datasets folder.
