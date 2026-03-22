@@ -38,11 +38,26 @@ This section demonstrates MongoDB document-based design.
 This assignment compares relational and NoSQL databases.  
 RDBMS ensures structured and consistent data, while NoSQL provides flexibility and scalability for modern applications.
 
+
+## Part 3: Data Warehouse
+
+In this section, a data warehouse is designed using a star schema.
+
+### Tables Used:
+- fact_sales (stores sales data like amount, product, date, store)
+- dim_date (stores date information like month, year)
+- dim_store (stores store details)
+- dim_product (stores product information)
+
+### Concepts Used:
+- Star Schema Design
+- Fact and Dimension Tables
+- ETL (Extract, Transform, Load)
+- Aggregation Queries (SUM, GROUP BY)
+
+### Queries Implemented:
+- Total sales revenue by category and month
+- Top 2 performing stores
+- Monthly sales trend
+- 
 ---
-
-## ✅ Status
-
-✔ Part 1 Completed  
-✔ Part 2 Completed  
-
-🚀 Ready for submission
