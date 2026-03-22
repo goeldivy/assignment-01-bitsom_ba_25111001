@@ -60,4 +60,4 @@ In this section, a data warehouse is designed using a star schema.
 - Top 2 performing stores
 - Monthly sales trend
 - 
----
+--https://colab.research.google.com/drive/1nBlBNr6PpjUMXuO61FXUEhRQcgaSXdge?usp=sharing-
