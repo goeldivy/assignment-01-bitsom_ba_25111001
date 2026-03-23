@@ -1,1 +1,39 @@
+┌──────────────────────────────┐
+│        DATA SOURCES          │
+│------------------------------│
+│ • Patient Records (EHR)      │
+│ • ICU Devices (Real-time)    │ ← Real-time streaming data
+│ • Hospital System (Billing)  │
+└──────────────┬───────────────┘
+               ↓
 
+┌──────────────────────────────┐
+│          DATA LAKE           │
+│------------------------------│
+│ Raw Storage (All formats)    │
+│ Logs, Images, Device Data    │
+│ Schema-on-read storage       │
+└──────────────┬───────────────┘
+               ↓
+
+┌──────────────────────────────┐
+│     PROCESSING LAYER         │
+│------------------------------│
+│ • ETL Pipelines              │ ← Data cleaning & transformation
+│ • Stream Processing (ICU)    │ ← Real-time processing
+└──────────────┬───────────────┘
+               ↓
+
+┌───────────────┬──────────────────┬────────────────────┐
+│ SQL Database  │ Data Warehouse   │ Vector Database    │
+│ (OLTP)        │ (OLAP)           │ (AI Search)        │
+│ Patient Data  │ BI Reporting     │ Semantic Search    │
+│ Transactions  │ Aggregations     │ (Embeddings)       │
+└──────┬────────┴────────┬─────────┴────────┬───────────┘
+       ↓                 ↓                  ↓
+
+┌──────────────┬────────────────────┬────────────────────┐
+│ AI Model     │ Doctor Search      │ Dashboard          │
+│ Prediction   │ Natural Language   │ Reports            │
+│ (Readmission)│ Query System       │ Monthly Insights   │
+└──────────────┴────────────────────┴────────────────────┘
